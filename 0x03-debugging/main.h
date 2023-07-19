@@ -6,6 +6,7 @@
 int main(void)
 {
 	int i;
+
 	printf("Infinite loop incoming :(\n");
 	i = 10;
 	/*while (i < 10)*/
