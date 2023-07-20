@@ -7,11 +7,11 @@
   *and for the multiple of five print Buzz
   *Return: Always 0 (Success)
   */
-int mai(void)
+int main(void)
 {
 	int i;
 
-	for (i= 1; i <= 100; i++}
+	for (i= 1; i <= 100; i++)
 	{
 		if (i % 3 == 0 && i % 5 != 0)
 		{
@@ -30,7 +30,7 @@ int mai(void)
 			printf(" %d", i);
 		}
 	}
-	printf("\n");
+	printf('\n');
 
 	return (0);
 }
