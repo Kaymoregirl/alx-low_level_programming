@@ -5,7 +5,7 @@
   *@n: number of times the character \ should be printed
   */
 
-void print_diag0nal(int n)
+void print_diagonal(int n)
 {
 	if (n <= 0)
 	{
@@ -23,8 +23,8 @@ void print_diag0nal(int n)
 					_putchar('\\');
 				else if (j < i)
 					_putchar(' ');
-		}
+			}
 		_putchar('\n');
+		}
 	}
-     }
 }

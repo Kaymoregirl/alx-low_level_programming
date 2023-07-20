@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <main.h>
+#include <math.h>
 
 /**
  *main - finds and prints the largest prime factor of the number 6
@@ -10,15 +10,15 @@ int main(void)
 {
 	long int n;
 	long int max;
-	lonf int i;
+	long int i;
 
 	n = 612852475143;
-	max = -i;
+	max = -1;
 
 	while (n % 2 == 0)
 	{
 		max = 2;
-		n /=2;
+		n /= 2;
 	}
 
 	for (i = 3; i <= sqrt(n); i = i + 2)
