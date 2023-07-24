@@ -12,7 +12,9 @@ i#include <stdio.h>
 int main(void)
 {
 	int pass[100];
-	int i; sum, n;
+	int i;
+	int sum;
+	int n;
 
 	sum = 0;
 
