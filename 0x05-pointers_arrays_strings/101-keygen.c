@@ -12,13 +12,13 @@
 int main(void)
 {
 	int pass[100];
-	int i; sum, n;
+	int i; sum; n;
 
 	sum = 0;
 
 	srand(time(NULL));
 
-	for (i = 0; i < 100; i+=)
+	for (i = 0; i < 100; i++)
 	{
 		pass[1] = rand() % 78;
 		sum += (pass[i] + '0');
