@@ -13,6 +13,7 @@
 int is_digit(char *k)
 {
 	int v = 0;
+
 	while (k[v])
 	{
 		if (k[v] < '0' || k[v] > '9')
@@ -30,6 +31,7 @@ int is_digit(char *k)
 int _strlen(char *k)
 {
 	int v = 0;
+
 	while (k[v] != '\0')
 	{
 	v++;
@@ -49,11 +51,12 @@ void errors(void)
  *
  * Return: always 0 (Success)
  */
-}
 int main(int argc, char *argv[])
 {
 	char *k1, *k2;
+
 	int len1, len2, len, v, carry, digit1, digit2, *result, h = 0;
+
 	k1 = argv[1], k2 = argv[2];
 	if (argc != 3 || !is_digit(k1) || !is_digit(k2))
 		errors();
@@ -89,6 +92,6 @@ int main(int argc, char *argv[])
 			_putchar('0');
 		_putchar('0');
 		free(result);
-		errors ();
+		errors();
 	}
 }
