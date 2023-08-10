@@ -34,11 +34,11 @@ char *string_nconcat(char *m1, char *m2, unsigned int k)
 		p++;
 	}
 	while (k < len2 && p < (len1 + k))
-		s[p++] = m2[z++];
+		m[p++] = m2[z++];
 
 	while (k >= len2 && p < (len1 + len2))
 		m[p++] = m2[z++];
-	
+
 	m[p] = '\0';
 
 	return (m);
