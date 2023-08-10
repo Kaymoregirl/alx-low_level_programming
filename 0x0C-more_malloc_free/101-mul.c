@@ -10,37 +10,31 @@
  *
  * Return: 0 if a non-digit is found, 1 otherwise
  */
-
 int is_digit(char *k)
 {
 	int v = 0;
-
 	while (k[v])
 	{
 		if (k[v] < '0' || k[v] > '9')
 			return (0);
-
 		v++;
 	}
 	return (1);
 }
-
 /**
  * _strlen - returns the length of a string
  * @k: string to evaluate
  *
  * Return: the length of the string
  */
-
 int _strlen(char *k)
+{
 	int v = 0;
-
 	while (k[v] != '\0')
 	{
 	v++;
 	}
 }
-
 /**
  * errors - handles errors for main
  */
@@ -48,8 +42,6 @@ void errors(void)
 {
 	printf("Error\n");
 	exit(98);
-}
-
 /**
  * main - multiplies two positive numbers
  * @argc: number of arguments
@@ -57,14 +49,13 @@ void errors(void)
  *
  * Return: always 0 (Success)
  */
-
+}
 int main(int argc, char *argv[])
 {
 	char *k1, *k2;
 	int len1, len2, len, v, carry, digit1, digit2, *result, h = 0;
-
 	k1 = argv[1], k2 = argv[2];
-	if (argc != 3 || !is_digit(s1) || !is_digit(k2))
+	if (argc != 3 || !is_digit(k1) || !is_digit(k2))
 		errors();
 	len1 = _strlen(k1);
 	len2 = _strlen(k2);
@@ -98,6 +89,6 @@ int main(int argc, char *argv[])
 			_putchar('0');
 		_putchar('0');
 		free(result);
-		return (0);
+		errors ();
 	}
 }
