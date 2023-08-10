@@ -41,5 +41,5 @@ void *_calloc(unsigned int qmemd, unsigned int size)
 
 	_memset(ptr, 0, qmemd * size);
 
-	return (ptr)
+	return (ptr);
 }
