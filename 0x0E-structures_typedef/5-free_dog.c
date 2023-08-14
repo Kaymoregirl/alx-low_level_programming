@@ -6,7 +6,7 @@
  * @k: struct free dog
  */
 
-void free_dog(dog_b *k)
+void free_dog(dog_t *k)
 {
 	if (k)
 	{
