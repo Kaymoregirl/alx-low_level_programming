@@ -9,7 +9,7 @@
 
 void print_all(const char * const format, ...)
 {
-	int q = 0;
+	int i = 0;
 	char *str, *sep = "";
 
 	va_list list;
@@ -18,31 +18,31 @@ void print_all(const char * const format, ...)
 
 	if (format)
 	{
-		while (format[q])
+		while (format[i])
 		{
-			switch (format[q])
+			switch (format[i])
 			{
-				case 'a':
+				case 'c':
 					printf("%s%c", sep, va_arg(list, int));
 					break;
-				case 'q':
+				case 'i':
 					printf("%s%d", sep, va_arg(list, int));
 					break;
-				case 'k':
+				case 'f':
 					printf("%s%f", sep, va_arg(list, double));
 					break;
-				case 'w':
+				case 's':
 					str = va_arg(list, char *);
 					if (!str)
 						str = "(nil)";
 					printf("%s%s", sep, str);
 					break;
 				default:
-					q++;
+					i++;
 					continue;
 			}
 			sep = ", ";
-			q++;
+			i++;
 		}
 	}
 
