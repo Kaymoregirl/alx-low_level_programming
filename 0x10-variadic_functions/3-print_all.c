@@ -41,7 +41,7 @@ void print_all(const char * const format, ...)
 					q++;
 					continue;
 			}
-			sep = ", "
+			sep = ", ";
 			q++;
 		}
 	}
