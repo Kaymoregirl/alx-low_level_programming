@@ -36,7 +36,7 @@ size_t looped_listint_len(const listint_t *head)
 				horse = horse->next;
 			}
 
-			mpuse = mouse->next;
+			mouse = mouse->next;
 			while (mouse != horse)
 			{
 				nodes++;
