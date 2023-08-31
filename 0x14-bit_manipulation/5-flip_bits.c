@@ -15,11 +15,9 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int current;
 	unsigned long int exclusive = n ^ m;
 
-	{
 		current = exclusive >> k;
 		if (current & 1)
 			count++;
-	}
 
 	return (count);
 }
