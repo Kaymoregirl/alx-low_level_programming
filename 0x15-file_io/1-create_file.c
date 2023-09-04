@@ -6,7 +6,7 @@
  * @text_content: File to be wretten to a string of a pointer
  *
  * Return - -1 if the function fails
- * Otherwise return - 1.
+ * 	Otherwise - 1.
  */
 
 int create_file(const char *filename, char *text_content)
@@ -32,3 +32,4 @@ int create_file(const char *filename, char *text_content)
 
 	return (1);
 }
+
