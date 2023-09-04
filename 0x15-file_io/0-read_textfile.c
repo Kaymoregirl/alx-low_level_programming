@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * read_textfile - Print text file to standoutoutput and read it
+ * read_textfile - Print text file to STDOUT and read it
  * @filename: text file to be read
  * @letters: Read the number of letters
  * Return: w- Read and print the actual bytes of numbers
@@ -27,3 +27,4 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	close(fd);
 	return (w);
 }
+
