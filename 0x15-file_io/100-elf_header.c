@@ -184,7 +184,7 @@ void print_osabi(unsigned char *e_ident)
 }
 
 /**
- * print_abi - The ABI version of ELF header to be printed
+ * print_abi - The ABI version of ELF header to print
  * @e_ident: The ELF ABI version contained by an array of a pointer
  */
 
